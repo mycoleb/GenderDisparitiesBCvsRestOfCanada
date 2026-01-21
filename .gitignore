@@ -1,4 +1,15 @@
-﻿.venv/
+# Python
+.venv/
 __pycache__/
 *.pyc
+
+# Data (do not commit raw or derived datasets)
+data/
+!data/README.md
+
+# Outputs
 outputs/
+
+# OS
+.DS_Store
+Thumbs.db
