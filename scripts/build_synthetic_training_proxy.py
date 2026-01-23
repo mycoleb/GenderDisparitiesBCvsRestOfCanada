@@ -8,6 +8,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+df = pd.read_csv("data/model_microdata.csv")
+print("Gender values:", df['gender'].unique())
+print("Province values:", df['province'].unique()[:5])
 
 def norm(s: str) -> str:
     return re.sub(r"\s+", " ", str(s)).strip().lower()
